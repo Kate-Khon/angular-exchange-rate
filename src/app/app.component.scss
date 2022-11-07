@@ -1,0 +1,44 @@
+* {
+  font-family: Luminari, fantasy;
+}
+
+.exchanger {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 90px 30px 30px;
+
+  &__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    font-family: Luminari, fantasy;
+  }
+
+  &__selectForm {
+    display: inline-block;
+    padding: 50px;
+  }
+
+  &__inputForm {
+    height: 100px;
+    width: fit-content;
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s, background-color 0.6s;
+
+    &:hover {
+      transform: translateX(-50%) scale(1.2);
+      background-color: rgb(8, 49, 129);
+    }
+  }
+}
